@@ -17,7 +17,7 @@ try:
     while True:
         analog_value_1, analog_value_2 = read_analog_values()
         
-        threshold_1 = 50  # mV
+        threshold_1 = 0.5  #50 mV
         
         if analog_value_1 > threshold_1:
             generate_pulse(21)  # Generate D pulse on pin 21
